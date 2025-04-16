@@ -1,0 +1,137 @@
+/* Root container */
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Themes */
+body.light-mode {
+  background-color: #f0f2f5;
+  color: #1c1c1c;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* App Container */
+.app {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .app {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .input {
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+.button {
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Light & Dark buttons */
+.light-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.dark-button {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.light-button:hover,
+.dark-button:hover {
+  opacity: 0.9;
+}
+
+/* Add + Search inputs */
+.add-input,
+.search-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Theme Toggle */
+.theme {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Todo list */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Status bar */
+.status {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+}
+
+body.dark-mode .status {
+  background-color: #2a2a2a;
+}
